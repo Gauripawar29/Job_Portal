@@ -1,0 +1,112 @@
+.applications-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* JOB HEADER */
+.job-header {
+  background: linear-gradient(135deg, #0d6efd, #4f8cff);
+  padding: 20px;
+  border-radius: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.job-header h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.job-header .company {
+  font-size: 14px;
+  opacity: 0.9;
+   color: white;
+}
+
+/* TOTAL */
+.total-count {
+  margin: 10px 0 20px;
+  color: #495057;
+}
+
+/* EMPTY STATE */
+.empty-state {
+  background: #f8f9fa;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  color: #6c757d;
+}
+
+/* APPLICANT CARD */
+.applicant-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.applicant-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* LEFT */
+.applicant-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  background: #0d6efd;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.applicant-left h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.applicant-left small {
+  color: #6c757d;
+}
+
+/* RIGHT */
+.applicant-right {
+  display: flex;
+  align-items: center;
+}
+
+.download-btn {
+  padding: 8px 14px;
+  background: #0d6efd;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #084298;
+}
+
+.no-resume {
+  font-size: 14px;
+  color: #adb5bd;
+}

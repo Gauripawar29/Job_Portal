@@ -1,0 +1,110 @@
+.container {
+  max-width: 900px;
+}
+
+/* HEADER */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* JOB CARD */
+.job-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* LEFT INFO */
+.job-info h5 {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.company {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.job-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+/* === Progress Wrapper === */
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Circular Progress === */
+.progress-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #22c55e calc(var(--percent) * 1%),
+    #e5e7eb 0%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background 0.6s ease-in-out;
+}
+
+/* Inner Circle - ensures number is visible */
+.progress-inner {
+  width: 70px; /* slightly bigger for double digits */
+  height: 70px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1; /* ensures it's above the pseudo circle */
+}
+
+/* Number and text inside inner circle */
+.progress-inner span {
+  font-size: 16px; /* slightly smaller for 2-digit numbers */
+  color: #111827;
+  z-index: 2;
+}
+
+.progress-inner small {
+  font-size: 11px;
+  color: #6b7280;
+  z-index: 2;
+}
+
+/* Optional: pseudo-element for background cutout (not needed but keeps style) */
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 0;
+}
